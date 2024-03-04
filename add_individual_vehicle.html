@@ -1,0 +1,1505 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>02_add_individual_vehicle</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="shortcut icon" type="image/x-icon" href="#">
+        <!-- Place favicon.ico in the root directory -->
+        
+		<!-- CSS here -->
+        <link rel="stylesheet" href="assets/css/font.css">
+        <link rel="stylesheet" href="assets/css/nice-select.css">
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/responsive.css">
+    </head>
+    <body>
+
+       
+    <!-- header-area START -->
+    <div class="header-area">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class=" col-8 ">
+                    <div class="header__left" >
+                        <button type="button" class="siteBar-btn">
+                            <img src="assets/img/bar.svg" class="bar" alt="">
+                            <img src="assets/img/close.svg" class="close" alt="">
+                        </button>
+                        <div class="logo-area">
+                            <a href="index.html"><img src="assets/img/logo.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4  text-right">
+                    <div class="header__right">
+                        <ul>
+                            <li><a href="#" class="notifications active"><img src="assets/img/notifications.svg" alt=""></a></li>
+                            <li><a href="#" class="user-img"><img src="assets/img/user.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- header-area END -->
+
+
+    <main class="box__body">
+
+        <div class="side__nav">
+            
+            <button type="button" class="barbtn">
+                <img src="assets/img/close.svg" class="barShow" alt="">
+                <img src="assets/img/menu.svg" class="barClose" alt="">
+            </button>
+            
+            <div class="src__box">
+                <a href="#"><img src="assets/img/search.svg" alt=""></a>
+                <input type="text" placeholder="Search">
+            </div>
+            <ul>
+                <li><span>Main</span></li>
+                <li><a href="index.html"><i><img src="assets/img/nav-1.svg" alt=""></i> Dashboard</a></li>
+
+                <li><span>VEHICLES</span></li>
+                <li><a href="add_vehicle.html"><i><img src="assets/img/nav-2.svg" alt=""></i> Add Vehicle</a></li>
+                <li><a href="all_vehicles.html"><i><img src="assets/img/nav-3.svg" alt=""></i> All Vehicles</a></li>
+                <li class="Manage__nav">
+                    <a href="manage_makes.html"><i><img src="assets/img/nav-4.svg" alt=""></i> Manage</a> <img src="assets/img/arrow-down.svg" class="adown" alt="">
+                    <ul class="subNav">
+                        <li class="active"><a href="manage_makes.html" >Makes</a></li>
+                        <li><a href="manage_Models.html">Models</a></li>
+                        <li><a href="manage_Trims.html">Trims</a></li>
+                        <li><a href="manage-BodyType.html">Body Type</a></li>
+                        <li><a href="manage-OptionTypes.html">Option Types</a></li>
+                        <li><a href="manage_Options.html">Options</a></li>
+                    </ul>
+                </li>
+                <li><a href=""><i><img src="assets/img/nav-5.svg" alt=""></i> Sold Vehicles</a></li>
+                <li><a href=""><i><img src="assets/img/nav-6.svg" alt=""></i> Inactive Vehicles</a></li>
+
+                <li><span>INQUIRIES</span></li>
+                <li><a href="sell_car.html"><i><img src="assets/img/nav-7.svg" alt=""></i> Sell Car</a></li>
+                <li><a href="finance.html"><i><img src="assets/img/nav-8.svg" alt=""></i> Finance Eligibility </a></li>
+                <li><a href="12_test_drive.html"><i><img src="assets/img/nav-9.svg" alt=""></i> Test Drive</a></li>
+                <li><a href="Trade-In.html"><i><img src="assets/img/nav-10.svg" alt=""></i> Trade-In</a></li>
+                <li><a href="customer-testimonials-2.html"><i><img src="assets/img/nav-11.svg" alt=""></i> Contact Form</a></li>
+
+                <li><span>USER MANAGEMENT</span></li>
+                <li><a href="11_users.html"><i><img src="assets/img/nav-12.svg" alt=""></i> Users</a></li>
+
+                <li><span>GENERAL</span></li>
+                <li><a href="meet_the_team.html"><i><img src="assets/img/nav-12.svg" alt=""></i> Meet the Team</a></li>
+                <li><a href="customer-testimonials.html"><i><img src="assets/img/nav-13.svg" alt=""></i> Customer Testimonials</a></li>
+            </ul>
+        </div>
+
+
+        <!---------dashboard Section START ---------->
+        <section class="dashboard-area">
+            <div class="container">
+                <div class="sub__nav">
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#"><span>/</span> Our Vehicles</a></li>
+                        <li><a href="#"><span>/</span> Add Vehicle</a></li>
+                        <li><a href="#" class="active"><span>/</span> Vehicle Details</a></li>
+                    </ul>
+                </div>
+                <div class="box__wrp">
+                    <div class="stepContent__wrp">
+                        <h4 class="title">
+                            Vehicle <span>Details</span>
+                        </h4>
+                        <ul>
+                            <li class="active">
+                                <i></i>
+                                <span>Vehicle Details</span>
+                            </li>
+                            <li>
+                                <i></i>
+                                <span>Photo</span>
+                            </li>
+                            <li>
+                                <i></i>
+                                <span>Meta Data</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="Details__form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Inventory Information</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="input__blk extra">
+                                    <input type="text" placeholder="Enter internal code">
+                                    <span>Optional</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select sales agent*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="niceselect__blk extra">
+                                    <select class="wide">
+                                        <option data-display="Individual Vehicle">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                    <span>Select whether individual or commerical</span>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="VIN#*">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Vehicle Configuration</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Make *">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Model*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Trim*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select year*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="Enter Kilometers *">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select body type *">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Fuel Type*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Transmission *">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Specification*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select engine size*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select horsepower *">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select Drive Type*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select vehicle Color*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select No. of seats*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xxl-3 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Select No. of Doors*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Financial Information and Pricing</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="Enter Price*">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="Enter VAT">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="niceselect__blk">
+                                    <select class="wide">
+                                        <option data-display="Terms of loan in year*">Nothing</option>
+                                        <option value="1">Some option</option>
+                                        <option value="2">Another option</option>
+                                        <option value="3" disabled>A disabled option</option>
+                                        <option value="4">Potato</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="Downpayment %">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="Annual Interest Rate %">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="input__blk">
+                                    <input type="text" placeholder="EMI">
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6"></div>
+                            <div class="col-lg-4 col-xl-3 col-md-6"></div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk d-flex">
+                                    <label for="rr">Include VAT</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="rr" checked>
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Warranty & Service History</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-12">
+                                <div class="ServiceSW__wrp">
+                                    <div class="switch__blk">
+                                        <label for="sv-1">Warranty</label>
+                                        <div class="switch" >
+                                            <input type="checkbox" id="sv-1" checked name="name">
+                                            <span class="slider round"></span>
+                                        </div>
+                                    </div>
+                                    <div class="switch__blk">
+                                        <label for="sv-2">Service History?</label>
+                                        <div class="switch" >
+                                            <input type="checkbox" id="sv-2" checked name="name">
+                                            <span class="slider round"></span>
+                                        </div>
+                                    </div>
+                                    <div class="switch__blk">
+                                        <label for="sv-3">Service Contract?</label>
+                                        <div class="switch" >
+                                            <input type="checkbox" id="sv-3" checked name="name">
+                                            <span class="slider round"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form label__10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Comfort Features</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-1">12V SOCKET - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-1" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-2">ADAPTIVE CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-2" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-3">STEERING AUDIO CONTROLS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-3" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-4">AUTOMATIC AC</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-4" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-5">AUX</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-5" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-6">BLUETOOTH</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-6" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-7">CD PLAYER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-7" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-8">sTEERING CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-8" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-9">DRIVE COMPUTER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-9" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-10">ELECTRONIC HANDBRAKE</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-10" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-11">HEAD UP DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-11" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-12">KEYLESS ENTRY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-12" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-13">LEATHER COVERED DOOR ARMREST</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-13" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-14">LUMBAR SUPPORT - MANUAL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-14" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-15">MP3</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-15" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-16">NAVIGATION SYSTEM</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-16" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-17">NUMBER OF SPEAKERS 10</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-17" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-18">ODOMETER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-18" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-19">PUSH BUTTON START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-19" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-20">RADIO</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-20" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-21">RAIN SENSING WIPERS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-21" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-22">REMOTE START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-22" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-23">TEMPERATURE DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-23" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-24">TOUCHSCREEN</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-24" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-25">TOUCHSCREEN SIZE 8"</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-25" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-26">USB</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-26" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-27">VENTILATED SEATS - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-27" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="cf-28">VOICE OPERATED CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="cf-28" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form label__10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>External Features</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-1">12V SOCKET - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-1" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-2">ADAPTIVE CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-2" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-3">STEERING AUDIO CONTROLS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-3" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-4">AUTOMATIC AC</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-4" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-5">AUX</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-5" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-6">BLUETOOTH</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-6" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-7">CD PLAYER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-7" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-8">sTEERING CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-8" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-9">DRIVE COMPUTER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-9" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-10">ELECTRONIC HANDBRAKE</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-10" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-11">HEAD UP DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-11" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-12">KEYLESS ENTRY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-12" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-13">LEATHER COVERED DOOR ARMREST</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-13" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-14">LUMBAR SUPPORT - MANUAL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-14" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-15">MP3</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-15" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-16">NAVIGATION SYSTEM</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-16" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-17">NUMBER OF SPEAKERS 10</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-17" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-18">ODOMETER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-18" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-19">PUSH BUTTON START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-19" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-20">RADIO</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-20" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-21">RAIN SENSING WIPERS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-21" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-22">REMOTE START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-22" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-23">TEMPERATURE DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-23" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-24">TOUCHSCREEN</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-24" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-25">TOUCHSCREEN SIZE 8"</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-25" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-26">USB</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-26" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-27">VENTILATED SEATS - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-27" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="ef-28">VOICE OPERATED CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="ef-28" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form label__10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Interior Features</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-1">12V SOCKET - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-1" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-2">ADAPTIVE CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-2" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-3">STEERING AUDIO CONTROLS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-3" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-4">AUTOMATIC AC</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-4" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-5">AUX</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-5" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-6">BLUETOOTH</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-6" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-7">CD PLAYER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-7" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-8">sTEERING CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-8" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-9">DRIVE COMPUTER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-9" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-10">ELECTRONIC HANDBRAKE</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-10" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-11">HEAD UP DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-11" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-12">KEYLESS ENTRY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-12" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-13">LEATHER COVERED DOOR ARMREST</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-13" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-14">LUMBAR SUPPORT - MANUAL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-14" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-15">MP3</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-15" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-16">NAVIGATION SYSTEM</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-16" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-17">NUMBER OF SPEAKERS 10</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-17" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-18">ODOMETER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-18" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-19">PUSH BUTTON START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-19" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-20">RADIO</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-20" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-21">RAIN SENSING WIPERS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-21" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-22">REMOTE START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-22" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-23">TEMPERATURE DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-23" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-24">TOUCHSCREEN</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-24" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-25">TOUCHSCREEN SIZE 8"</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-25" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-26">USB</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-26" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-27">VENTILATED SEATS - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-27" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="iif-28">VOICE OPERATED CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="iif-28" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Details__form label__10">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="form__title">
+                                    <h6>Safety Features</h6>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-1">12V SOCKET - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-1" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-2">ADAPTIVE CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-2" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-3">STEERING AUDIO CONTROLS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-3" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-4">AUTOMATIC AC</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-4" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-5">AUX</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-5" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-6">BLUETOOTH</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-6" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-7">CD PLAYER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-7" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-8">sTEERING CRUISE CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-8" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-9">DRIVE COMPUTER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-9" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-10">ELECTRONIC HANDBRAKE</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-10" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-11">HEAD UP DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-11" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-12">KEYLESS ENTRY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-12" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-13">LEATHER COVERED DOOR ARMREST</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-13" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-14">LUMBAR SUPPORT - MANUAL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-14" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-15">MP3</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-15" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-16">NAVIGATION SYSTEM</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-16" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-17">NUMBER OF SPEAKERS 10</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-17" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-18">ODOMETER</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-18" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-19">PUSH BUTTON START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-19" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-20">RADIO</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-20" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-21">RAIN SENSING WIPERS</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-21" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-22">REMOTE START</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-22" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-23">TEMPERATURE DISPLAY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-23" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-24">TOUCHSCREEN</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-24" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-25">TOUCHSCREEN SIZE 8"</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-25" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-26">USB</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-26" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-27">VENTILATED SEATS - FRONT ONLY</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-27" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-xl-3 col-md-6">
+                                <div class="switch__blk">
+                                    <label for="sf-28">VOICE OPERATED CONTROL</label>
+                                    <div class="switch" >
+                                        <input type="checkbox" id="sf-28" checked name="name">
+                                        <span class="slider round"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="">
+                        <a href="#" class="thm_btn active mx-auto">NEXT</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!---------dashboard Section End ---------->
+   
+
+    </main>
+
+        <!---------footer Section START ---------->
+        <footer class="footer-area">
+            <p><a href="#">Copyright © First Choice Cars 2023</a>  All Rights Reserved.</p>
+        </footer>
+        <!---------footer Section End ---------->
+    
+		<!-- JS here --> 
+        <script src="assets/js/jquery-3.4.1.min.js"></script>
+        <script src="assets/js/popper.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/jquery.nice-select.min.js"></script>
+        <script src="assets/js/jquery.easypiechart.min.js"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="assets/js/main.js"></script>
+
+    </body>
+</html>

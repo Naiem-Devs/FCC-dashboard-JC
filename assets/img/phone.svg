@@ -1,0 +1,14 @@
+<svg width="30.000000" height="30.000000" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<clipPath id="clip86_3194">
+			<rect id="phone-svgrepo-com 1" width="30.000000" height="30.000000" fill="white" fill-opacity="0"/>
+		</clipPath>
+	</defs>
+	<rect id="phone-svgrepo-com 1" width="30.000000" height="30.000000" fill="#FFFFFF" fill-opacity="0"/>
+	<g clip-path="url(#clip86_3194)">
+		<path id="Vector" d="M2.50739 5.677C2.38123 3.89038 3.8941 2.5 5.68152 2.5L9.50757 2.5C10.425 2.5 11.2526 3.05273 11.6055 3.90161L13.2054 7.74927C13.5951 8.68677 13.3185 9.76929 12.5272 10.4036L11.5299 11.2031C11.0848 11.5601 10.9335 12.1753 11.1974 12.6809C12.5536 15.28 14.558 17.4861 16.9955 19.0835C17.51 19.4204 18.1896 19.2864 18.5735 18.8057L19.6127 17.5037C20.2457 16.7109 21.3261 16.4338 22.2615 16.8242L26.1014 18.4275C26.9484 18.781 27.5 19.6104 27.5 20.5298L27.5 24.375C27.5 26.166 26.0611 27.6194 24.2783 27.4927C12.8776 26.6814 3.31555 17.1272 2.50739 5.677Z" fill="#D3B478" fill-opacity="1.000000" fill-rule="nonzero"/>
+	</g>
+</svg>

@@ -1,0 +1,508 @@
+/* Big screen :1200px. */
+@media (min-width: 1200px) and (max-width: 1500px) {
+    .header-area .container-fluid{
+        
+padding: 0 20px;
+    }
+
+ 
+.full-Screen .dashboard-area{
+    max-width: 100%;
+}
+
+.dashboard-area{
+    
+max-width: calc(100% - 260px);
+    
+margin-left: auto;
+    
+padding-right: 10px;
+}
+.Vehicle__car i {
+    width: 70px;
+}
+
+.Vehicle__car a {
+    font-size: 12px;
+}
+
+.Performance__blk table th:first-child {
+    padding-left: 20px;
+}
+
+.Customer__blk {
+    height: 380px;
+}
+
+.Customer__blk ul {
+    flex-direction: column;
+}
+
+.CustomerV2__blk {
+    padding: 0 20px;
+}
+
+.CustomerV2__left span {
+    font-size: 14px;
+}
+
+.CustomerV2__left i {
+    width: 36px;
+    height: 36px;
+    flex-shrink: 0;
+}
+
+.CustomerV2__left {
+    gap: 10px;
+}
+
+.CustomerV2__right {
+    width: 200px;
+}
+
+.CustomerV2__right ul li {
+    font-size: 12px;
+}
+.table__blk thead th:first-child {
+    padding-left: 20px;
+}
+
+.table__blk tbody tr td:first-child {
+    padding-left: 20px;
+}
+.CarService__left {
+    padding: 0 30px;
+}
+
+
+}
+
+
+/* Normal screen :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .full-Screen .dashboard-area{
+        max-width: 100%;
+    }
+    .full-Screen .dashboard-area .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .side__nav {
+        left: -300px;
+    }
+
+.side__nav.siteBar {
+    left: 0;
+    z-index: 99;
+}
+    .header__left button{
+    display: block;
+}
+
+button.barbtn {
+    display: none;
+}
+
+button.barbtn {
+    display: none;
+}
+.header-area .container-fluid {
+    padding: 0 20px;
+}
+.Customer__blk{
+    height: 400px;
+}
+
+.Customer__blk ul {
+    flex-direction: column;
+}
+.CarService__left{
+    padding: 0 30px;
+}
+.sellCarBlk__date {
+    flex-basis:  40% !important;
+}
+
+}
+
+ 
+/* Tablet screen :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    .full-Screen .dashboard-area{
+        max-width: 100%;
+    }
+    .full-Screen .dashboard-area .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .side__nav {
+        left: -300px;
+    }
+
+.side__nav.siteBar {
+    left: 0;
+    z-index: 99;
+}
+    .header__left button{
+    display: block;
+}
+
+button.barbtn {
+    display: none;
+}
+.header-area .container-fluid {
+    padding: 0 20px;
+}
+.webTraffic__blk{
+    padding: 14px 24px;
+
+}
+.CustomerV2__blk {
+    flex-direction: column;
+    gap: 16px;
+    height: 150px;
+    padding: 20px 0;
+    align-items: start;
+    padding-left: 30px;
+}
+
+.CustomerV2__right {
+    width: 300px;
+}
+
+.CustomerV2__right h3 {
+    text-align: left;
+}
+
+.CarService__left {
+    margin-bottom: 20px;
+}
+
+.Alerts__blk {
+    margin-bottom: 20px;
+}
+.Vehicles__option {
+    flex-wrap: wrap;
+}
+
+.Vehicles__option #rangestart,#rangeend {
+    width: 38%;
+}
+
+.Vehicles__option .niceselect__blk {
+    width: 32%;
+}
+
+.Vehicles__option .ui.input input {
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+.ui.input.left.icon {
+    width: 100%;
+}
+
+
+.Vehicles__option a {
+    width: 20%;
+}
+
+.sellCarBlk__date {
+    flex-basis: 55% !important;
+    gap: 5px;
+}
+.sellCarBlk__date h6 {
+    font-size: 14px;
+}
+.sellCarBlk__list {
+    flex-direction: column;
+    align-items: normal;
+}
+.TestDrive__wrp i {
+    max-width: 230px;
+}
+
+}
+
+ 
+/* small screen :320px. */
+@media (max-width: 767px) {
+    .full-Screen .dashboard-area{
+        max-width: 100%;
+    }
+    .full-Screen .dashboard-area .container{
+        max-width: 100%;
+        padding: 0 20px;
+    }
+    .side__nav {
+        left: -300px;
+    }
+
+.side__nav.siteBar {
+    left: 0;
+    z-index: 99;
+}
+    .header__left button{
+    display: block;
+}
+
+button.barbtn {
+    display: none;
+}
+.header-area .container-fluid {
+    padding: 0 20px;
+}
+
+
+.webTraffic__blk ul {
+    flex-wrap: wrap;
+    gap: 15px 14px;
+}
+
+.webTraffic__blk {
+    padding: 20px;
+}
+
+.webTraffic__blk > i img {height: 200px;object-fit: cover;}
+
+.TrafficSource__wrp {
+    flex-direction: column;
+}
+
+.TrafficSource__blk {
+    width: 100%;
+}
+
+.BounceRate__blk {
+    width: 100%;
+    padding: 30px 0;
+}
+
+.table__blk table {
+    min-width: 700px;
+}
+
+.Manage__wrp .table__blk table {
+    min-width: 550px;
+}
+
+.table__blk {
+    overflow: auto;
+    margin-right: -11px;
+    padding-right: 15px;
+}
+
+.CustomerV2__blk {
+    flex-direction: column;
+    height: 200px;
+    align-items: start;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+.CustomerV2__left {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    text-align: center;
+    gap: 3px;
+}
+
+.CustomerV2__right {
+    margin: auto;
+}
+
+.CustomerV2__right ul {
+    justify-content: space-between;
+}
+
+.CustomerV2__right h3 {
+    text-align: center;
+}
+
+.CarService__chart {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.CarService__left {
+    height: auto;
+    padding: 30px;
+}
+
+.CarService__left > h5 {
+    margin-inline: auto;
+}
+
+.CarS__Average__blk h6 {
+    font-size: 15px;
+}
+
+.CarService__Average {
+    margin-top: 20px;
+}
+
+.Alerts__blk {
+    margin-bottom: 20px;
+}
+.Trending__blk .table__blk table{
+    min-width: auto;
+}
+.footer-area{
+    font-size: 14px;
+}
+.table__blk thead th{
+    height: auto;
+    padding: 18px;
+}
+.thm_btn{
+    height: 45px;
+    font-size: 15px;
+    max-width: 250px;
+}
+.stepContent__wrp ul li{
+    font-size: 12px;
+}
+.stepContent__wrp h4, h4.title{
+    font-size: 18px;
+}
+.sub__nav ul{
+    flex-wrap: wrap;
+}
+.fileUpload__wrp{
+    margin-bottom: 50px;
+}
+.Vehicles__option {flex-direction: column;margin: 20px 0;padding: 20px;}
+
+.Vehicles__header > div {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Vehicles__header {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Vehicles__option .niceselect__blk {
+    width: 100%;
+}
+
+.ui.input.left.icon {
+    width: 100%;
+    max-width: 100%;
+}
+
+div#rangestart,div#rangeend {
+    width: 100%;
+}
+.VehiclesBlk__btns {
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.VehiclesBlk__btns button {padding: 0 15px;gap: 10px;}
+.AddMake__modal {
+    padding: 20px;
+}
+.sellCar__Top {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.sellCar__TopRight {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sellCar__TopLeft {
+    text-align: center;
+}
+
+.sellCarBlk__title {
+    flex-direction: column;
+    gap: 10px;
+    align-items: start;
+}
+
+.sellCar__blk {
+    height: 130px;
+    padding: 15px;
+}
+
+.testDrive .sellCar__blk {height: 150px;}
+
+.sellCarBlk__btn {
+    flex-basis: 100%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.sellCarBlk__body {
+    flex-direction: column;
+}
+.sellCarBlk__title p b {
+    display: inline-block;
+    font-size: 15px;
+}
+
+.testDrive .sellCarBlk__title p b {
+    display: block;
+}
+
+.box__wrp {
+    padding: 20px;
+}
+.sellCarBlk__date h6 {
+    font-size: 14px;
+}
+.sellCarBlk__list {
+    gap: 20px;
+}
+
+.sellCarBlk__list > a {
+    flex-shrink: 0;
+}
+
+.sellCarBlk__body ul li b {
+    display: block;
+}
+.TestDrive__wrp {
+    flex-direction: column;
+}
+
+.Test__head ul {
+    flex-basis: 50%;
+}
+
+.Test__head {
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tt_btn {
+    right: 16px;
+}
+
+.tt__user {
+    flex-basis: 100%;
+}
+
+}
+ 
+/* Large Mobile screen :480px. */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.container {width:450px}
+.full-Screen .dashboard-area{
+    max-width: 100%;
+}
+.full-Screen .dashboard-area .container{
+    max-width: 100%;
+    padding: 0 20px;
+    width: 100%;
+}
+}
